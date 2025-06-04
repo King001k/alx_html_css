@@ -1,0 +1,33 @@
+/* Make the body a flex container with column direction */
+body {
+  display: flex;           /* Turns <body> into a flex container */
+  flex-direction: column;  /* Children (<header>, <main>, <footer>) stack vertically */
+  height: 100vh;           /* Makes sure the body takes the full viewport height */
+  margin: 0;               /* Removes default browser margin */
+}
+/* Make <main> a horizontal flex container */
+main {
+  display: flex;           /* Turns <main> into a horizontal flex container */
+  flex-direction: row;     /* Children (<article> and <aside>) are side by side */
+  flex: auto;              /* <main> takes up remaining vertical space */
+}
+/* Article section: takes 2/3 of the horizontal space */
+article {
+  flex: 2;                 /* Uses two parts of the available space */
+  overflow-y: auto;        /* Enables vertical scrolling if content is long */
+  padding: 1rem;           /* Adds some space inside the box */
+}
+/* Aside section: takes 1/3 of the horizontal space */
+aside {
+  flex: 1;                 /* Uses one part of the available space */
+  overflow-y: auto;        /* Enables vertical scrolling if content is long */
+  padding: 1rem;           /* Adds some space inside the box */
+}
+/* Optional spacing or background to distinguish areas */
+header, footer {
+  padding: 1rem;
+  background-color: #ccc;
+  text-align: center;
+}
+
+
