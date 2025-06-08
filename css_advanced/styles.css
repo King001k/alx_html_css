@@ -1,0 +1,369 @@
+@font-face {
+  font-family: "Source-Sans-Pro";
+  src: url(./source-sans-pro/SourceSansPro-Regular.otf) format("otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source-Sans-Pro", sans-serif;
+}
+
+body {
+  text-align: center;
+}
+
+header {
+  background-color: transparent;
+  padding: 10px;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  z-index: 1;
+  width: 90%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 10px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.hero {
+  background-image: url(images/Background.png);
+  background-size: cover;
+  background-position: center;
+  padding-top: 200px; /* Restored to original to match second image */
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  min-height: 100vh;
+  position: relative;
+}
+
+.hero-text {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 40px; /* Increased for better spacing */
+}
+
+.hero-text h1 {
+  font-size: 120px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-weight: 900;
+}
+
+.hero-text span {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+  color: #ffffff;
+  margin-right: 20px;
+}
+
+.hero-text button {
+  font-size: 14px;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 22px;
+  background-color: #c271ff;
+  display: block;
+  margin: 30px auto;
+  color: #ffffff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hero-image {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.hero-image h2 {
+  font-size: 40px;
+  margin-bottom: 20px; /* Increased for spacing */
+}
+
+.text-color {
+  color: #c271ff;
+  font-weight: bold;
+}
+
+.hero-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto; /* Adjusted for better spacing */
+  padding: 20px 0;
+  width: 80%;
+  gap: 30px; /* Added gap for even spacing between instructors */
+}
+
+.hero-image-container .instructor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.hero-image-container .instructor img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.hero-image-container .instructor h3 {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.hero-image-container .instructor p {
+  margin: 0;
+  font-size: 12px;
+  color: #ccc;
+}
+
+.testimonials {
+  background-color: #c271ff;
+  padding: 70px;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  color: #ffffff;
+}
+
+.testimonial-text {
+  padding: 20px;
+  text-align: start;
+}
+
+.testimonial-text h3 {
+  font-size: 20px;
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+.testimonial-text p {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.popular-tutorials {
+  padding: 50px;
+  background-color: #ffffff;
+  color: #071629;
+  display: flex;
+  flex-direction: column;
+  font-weight: light;
+}
+
+.popular-tutorials h2 {
+  font-weight: lighter;
+  font-size: 32px;
+}
+
+.tutorials {
+  display: flex;
+  flex-direction: row;
+}
+
+.tutorials-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.tutorial-card {
+  border-radius: 5px 5px 0 0;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  line-height: 1.5;
+  color: #071629;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative;
+}
+
+.video-container {
+  position: relative;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tutorial-author {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 70%;
+  height: 50px;
+  color: #c271ff;
+  font-style: semi-bold;
+}
+
+.tutorial-author img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.rating {
+  color: #c271ff;
+}
+
+.star-empty {
+  color: #d8d8d8;
+}
+
+.free-membership {
+  color: #ffffff;
+  background-color: #071629;
+  padding: 70px 0;
+}
+
+.free-membership-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.free-membership-text {
+  padding: 30px;
+  width: 100%;
+  height: auto;
+}
+
+.free-membership button {
+  padding: 20px 40px;
+  border: none;
+  border-radius: 22px;
+  background-color: #c271ff;
+  color: #ffffff;
+  font-size: 14px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.faq {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.faq h3 {
+  font-size: 24px;
+  color: #111;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  padding: 20px;
+  gap: 40px;
+}
+
+.faq-container p {
+  font-size: 15px;
+  color: #071629;
+  line-height: 1.1;
+}
+
+footer {
+  background-color: #2c2c2c;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  min-width: 100px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  height: 15px;
+  width: auto;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-icons i {
+  font-size: 14px;
+  padding: 3px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: #fff;
+  color: #000;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 8px;
+  margin-top: 10px;
+  color: #071629;
+}
