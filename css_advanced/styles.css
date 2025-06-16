@@ -115,6 +115,7 @@ li a {
   padding: 20px 0;
   width: 80%;
   gap: 30px; /* Added gap for even spacing between instructors */
+  
 }
 
 .hero-image-container .instructor {
@@ -132,7 +133,7 @@ li a {
 }
 
 .hero-image-container .instructor h3 {
-  margin: 5px 0;
+  margin: 50px 0;
   font-size: 16px;
 }
 
@@ -180,6 +181,7 @@ li a {
 
 .popular-tutorials h2 {
   font-weight: lighter;
+  margin-bottom: 40px;
   font-size: 32px;
 }
 
@@ -200,7 +202,7 @@ li a {
   background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 300px;
-  line-height: 1.5;
+  line-height: 20px;
   color: #071629;
   height: 450px;
   display: flex;
@@ -253,7 +255,7 @@ li a {
 }
 
 .rating {
-  color: #c271ff;
+  color: #5e9656;
 }
 
 .star-empty {
