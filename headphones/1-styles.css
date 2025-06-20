@@ -1,0 +1,100 @@
+/* ================= Font Icon Setup ================= */
+@font-face {
+  font-family: 'holberton_school-icon';
+  src:  url('fonts/holberton_school-icon.eot');
+  src:  url('fonts/holberton_school-icon.eot?#iefix') format('embedded-opentype'),
+        url('fonts/holberton_school-icon.woff') format('woff'),
+        url('fonts/holberton_school-icon.ttf') format('truetype'),
+        url('fonts/holberton_school-icon.svg#holberton_school-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="holberton_school-icon-"], [class*=" holberton_school-icon-"] {
+  font-family: 'holberton_school-icon' !important;
+font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 40px;
+  color: #FF6565;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.holberton_school-icon-ic_sound:before {
+  content: "\e90e";
+}
+
+.holberton_school-icon-ic_video:before {
+  content: "\e910";
+}
+
+.holberton_school-icon-ic_music:before {
+  content: "\e90d";
+}
+
+.holberton_school-icon-ic_hearing:before {
+  content: "\e909";
+}
+
+
+/* What we do Section */
+.what-we-do {
+  background-color: white;
+  color: #071629;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section-header {
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+.section-header h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section-header p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #071629;
+}
+
+/* Service Items */
+.services {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.service-item {
+  width: 200px;
+}
+
+.service-item img {
+  height: 60px;
+  margin-bottom: 20px;
+  filter: brightness(0) saturate(100%) invert(41%) sepia(90%) saturate(631%) hue-rotate(322deg) brightness(101%) contrast(91%);
+}
+
+.service-item h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 14px;
+  color: #071629;
+}
