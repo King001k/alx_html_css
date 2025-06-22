@@ -1,101 +1,69 @@
-/* ================= Font Icon Setup ================= */
-@font-face {
-  font-family: 'holberton_school-icon';
-  src:  url('fonts/holberton_school-icon.eot');
-  src:  url('fonts/holberton_school-icon.eot?#iefix') format('embedded-opentype'),
-        url('fonts/holberton_school-icon.woff') format('woff'),
-        url('fonts/holberton_school-icon.ttf') format('truetype'),
-        url('fonts/holberton_school-icon.svg#holberton_school-icon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-[class^="holberton_school-icon-"], [class*=" holberton_school-icon-"] {
-  font-family: 'holberton_school-icon' !important;
-
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 40px;
-  color: #FF6565;
-  display: block;
-  margin-bottom: 15px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.holberton_school-icon-ic_sound:before {
-  content: "\e90e";
-}
 
-.holberton_school-icon-ic_video:before {
-  content: "\e910";
-}
-
-.holberton_school-icon-ic_music:before {
-  content: "\e90d";
-}
-
-.holberton_school-icon-ic_hearing:before {
-  content: "\e909";
-}
-
-/* Results Section */
-.results {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), #071629),
-              url('Assets/img/background 2.png') no-repeat center center/cover;
-  color: white;
-  text-align: center;
+#results {
   padding: 80px 20px;
+  background: url("img/background 2.png") no-repeat center center/cover;
+  text-align: center;
+  color: white;
 }
 
-.results-header {
-  max-width: 800px;
-  margin: 0 auto 60px;
+#results h2{
+    margin-bottom: 30px;
 }
 
-.results-header h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-.results-header p {
-  font-size: 16px;
+.results {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 14px;
   line-height: 1.6;
 }
 
-/* Result Items */
-.results-boxes {
+.pentagon{
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 30px;
-}
-
-.result-item {
-  background-color: #FF6565;
-  width: 120px;
-  height: 120px;
-  clip-path: polygon(50% 0%, 100% 38%, 81% 100%, 19% 100%, 0% 38%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: 14px;
-  font-weight: bold;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.image-container {
+  position: relative;
+  width: 180px;
+  height: 180px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  display: block;
+}
+
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
-  padding: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.2;
+  pointer-events: none; 
 }
 
-.result-item .value {
-  font-size: 18px;
-  margin-bottom: 5px;
+.top-text {
+  font-size: 36px;
+  font-weight: 800;
 }
 
-.result-item .label {
-  font-size: 13px;
+.bottom-text {
+  font-size: 12px;
+  margin-top: 4px;
   font-weight: normal;
 }

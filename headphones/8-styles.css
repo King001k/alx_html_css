@@ -1,0 +1,157 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: wheat;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero Background */
+.hero {
+  background-image: url('img/background.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Layout Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Content Layout */
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  margin-right: 20px;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    position: absolute;
+    left: 0;
+  }
+
+  .main-nav {
+    display: none;
+  }
+}
+
+/* Logo */
+.logo {
+  margin-left: 15px; /* Push logo a bit to the right */
+  cursor: pointer;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+  filter: drop-shadow(0 0 5px rgba(0,0,0,0.2));
+  transition: transform 0.2s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+/* Navigation */
+.main-nav {
+  margin-right: 10px; /* Push nav slightly away from right */
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-transform: lowercase;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #FF6565;
+}
+
+/* Hero Text */
+.hero-content {
+  text-align: center;
+  margin-top: 80px;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  opacity: 0.95;
+  cursor: pointer;
+}
+
+.cta-button {
+  background-color: #e63946;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 25px;
+  opacity: 0.9;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  color: #ff6b6b; 
+ 
+}
+
+.description {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1rem;
+  opacity: 0.95;
+  cursor: pointer;
+}

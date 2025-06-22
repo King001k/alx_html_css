@@ -1,0 +1,273 @@
+/* RESET AND BASE STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* HEADER NAVIGATION */
+.nav_bar {
+  background: url("img/background.png") no-repeat center center/cover;
+  color: white;
+  padding: 2rem 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav img {
+  max-height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff3c3c;
+}
+
+/* HERO SECTION */
+.nav .hero-content {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem;
+  color: white;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content h6 {
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.hero-content button {
+  padding: 0.8rem 2rem;
+  background-color: #ff3c3c;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  transition: background-color 0.3s;
+}
+
+.hero-content button:hover {
+  background-color: #e53232;
+}
+
+/* WHAT WE DO SECTION */
+#whatWeDo {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+#whatWeDo h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#whatWeDo .intro {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.sounds {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.sound {
+  text-align: center;
+  width: 200px;
+}
+
+.sound img {
+  width: 80px;
+  margin-bottom: 0.5rem;
+}
+
+/* RESULTS SECTION */
+#results {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+#results h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.results {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.pentagon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.image-container {
+  position: relative;
+  width: 140px;
+  text-align: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-container .text {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -35%);
+  color: white;
+  text-align: center;
+}
+
+.top-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.bottom-text {
+  font-size: 0.85rem;
+}
+
+/* CONTACT SECTION */
+.contact {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact button {
+  padding: 0.8rem 2rem;
+  background-color: #ff3c3c;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.contact button:hover {
+  background-color: #e53232;
+}
+
+/* FOOTER */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.footer-logo img {
+  width: 120px;
+  margin-bottom: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff3c3c;
+}
+
+footer p {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+/* RESPONSIVE */
+@media (min-width: 768px) {
+  .footer-top {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 4rem;
+  }
+
+  .hero-content h2 {
+    font-size: 3rem;
+  }
+
+  .sounds, .pentagon {
+    gap: 3rem;
+  }
+}
+
